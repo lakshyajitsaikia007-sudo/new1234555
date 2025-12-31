@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Romantic Letter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+body {
+  margin:0;
+  font-family:'Playfair Display', serif;
+  background:#fff0f5;
+  overflow-x:hidden;
+}
+
+/* Pages */
+.page{
+  position: relative;
+  max-width:900px;
+  margin:50px auto;
+  padding:40px;
+  background: rgba(255,255,255,0.95);
+  border-radius:20px;
+  box-shadow:0 20px 50px rgba(0,0,0,0.2);
+  overflow: visible;
+  z-index:1;
+}
+
+/* Text */
+h1{text-align:center;font-size:38px; margin-bottom:20px;}
+p{font-size:19px;line-height:1.7;margin-bottom:16px;}
+.highlight{font-weight:bold;font-style:italic;text-align:center;}
+
+/* Button */
+button{
+  display:block;
+  margin:25px auto 0;
+  padding:12px 32px;
+  font-size:18px;
+  border:none;
+  border-radius:30px;
+  background:#ff6b81;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+  z-index:1;
+  position: relative;
+}
+button:hover{background:#ff85a0;transform:scale(1.05);}
+
+/* Images */
+img{max-width:300px;width:100%;display:block;margin:20px auto;border-radius:15px;}
+
+/* Signature */
+.signature{position:relative; display:block; text-align:right; font-style:italic;font-size:20px; margin-top:20px; z-index:1;}
+
+/* Floating Hearts Background */
+.heart{
+  position: absolute;
+  font-size: 20px;
+  opacity: 0.6;
+  pointer-events: none;
+  animation: drift linear infinite;
+  z-index:0;
+}
+
+@keyframes drift{
+  0% { transform: translate(0,0) rotate(0deg); }
+  50% { transform: translate(var(--x), var(--y)) rotate(180deg); }
+  100% { transform: translate(0,0) rotate(360deg); }
+}
+</style>
+</head>
+<body>
+
+<!-- Background Hearts Container -->
+<div id="hearts-container"></div>
+
+<!-- PAGE 1 -->
+<div class="page" id="p1">
+  <h1>🎉 Happy New Year, My Sunshine 🎉</h1>
+  <p>I pray that you again shine like you have never before.</p>
+  <p>May this year hold you softly, teaching you what matters, and loving you in all the quiet places...</p>
+  <button onclick="next()">➡️ Pisor Khon Swa</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="p2">
+  <h1>Ouu Guxani</h1>
+  <p>Notun bosoror xubessa jonalu. xosai beh notun bosor ahi gol haaa like xosai a 2026 ha wow. Tumar tu bio exam tu ase ... Ig eman enjoy u koribo pora nai jiman ji he hoi aseh i understand aku nai dia atia kosto kora aru, next year tu val keh enjoy koriba.</p>
+  <p>Yk i hope you feel little bit happy after reading this.</p>
+  <p>You know you are a very strong person both mentally and physically ig but mentally you are strong because I have never met a female who is so mentally strong as you, ig you should thank your past for this thing ...</p>
+  <p>You know it is because of your past that you are who you are ... but in the end of the day you survive and take it all alone ...</p>
+  <p>You are fighting a battle that many can’t comprehend and be proud of it ... i know you didn’t ask for it ..you also want to live a life of a normal girl ..getting the love of your parents, have someone to trust but what can you do life is unfair nahh ..everyone is fighting a battle of their own . you know god give problem to those who can take it and survive it .... god is always watching but before giving he makes the receiver understand the value of it ......</p>
+  <p class="highlight">"YOU SHOULD LOOK FOR EVERYTHING EXCEPT LOVE AND DEATH, IT WILL FIND YOU"</p>
+  <button onclick="next()">➡️ Pisor Khon Swa</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="p3">
+  <h1>Ms Choudhary</h1>
+  <img src="https://i.postimg.cc/SxG43nFS/1000092800.jpg" alt="Image 1">
+  <p>You think you have no one yet you have us. Even if the world blames you we will always be beside you standing tall as never. You mean a lot to us. We might not say it actually we don’t know how to say it after all no one likes a boy being emotional but the truth is, you are a real friend for us. And I hope we all be together actually we will be and yk why thats just how we boys are ...once a friend always a friend ......</p>
+  <img src="https://i.postimg.cc/qgfDMxnV/1000092797.jpg" alt="Image 2">
+  <img src="https://i.postimg.cc/dt2cZh0w/1000102665.jpg" alt="Image 3">
+  <p>Hey I want to say sorry about everything that I did which made you insecure, disappointed, unvalued or anything. I really didn’t mean to do or say any of this. After all till now I never talk to a female so much and actually tbh till now the only place I was comfortable was with my male friend and with them when I or we talk ... its was different like we make fun of each other but also protect each other and it was very different but what i mean is that with you, I feel comfortable, but the difference is that when I am with you I only want to hear ... I mean I prefer listening to you than talking ...yes i love talking to you but I love it more when you’re the one talking ....its something about your voice, I never in my life find a sound such as yours which feels very warm, comforting, motivational, genuine, and another thing which even I don’t know how to express it ..its like I am attracted to your voice ....and if I start talking about you I might never stop ....so what I want to say is that you mean a lot to me and you really do ....and you know 'I am very bad with words so I hope you can read eyes' ....and yk i am sorry I am really sorry ..yk for what I said ....and i hope you can forgive me and my doing of the 2025 ......i don’t know how to say it but you’re really precious to me you might think I am just another guy thats saying but you know you don’t have to believe me I will prove it ...after all I did take maths nahhhh .... you ....</p>
+  <p>THIS WILL BE THE FIRST YEAR WHERE I WON’T THINK ABOUT STARTING OVER , BUT ABOUT CONTINUING BECAUSE I’M FINALLY ON THE RIGHT PATH</p>
+  <p>At last, may your future be 56x kinder and better than your past .....more laughter, fewer tears, endless reasons to smile. You truly deserve it.</p>
+  <p>GIVE YOUR BEST ....I will always be with you no matter what ...yes we might get angry at each other but I will always come back to ask for your forgiveness and I hope you forgive me ..... but I will never let you be alone ..I will always be with you and that’s promise i was, I will and I always will just believe me in this ........ I love you &lt;3</p>
+  <button onclick="next()">➡️ Pisor Khon Swa</button>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="p4">
+  <h1>One Last Thing</h1>
+  <p>I will always be with you — no matter what. Even if we get angry. I'll always come back asking for your forgiveness and I hope you will forgive me. You'll never be alone. And these are the words of a Warrior born to fight ....</p>
+  <div class="signature">— Mr Saikia</div>
+</div>
+
+<!-- Music -->
+<audio id="music" loop>
+  <source src="https://www.chosic.com/wp-content/uploads/2024/11/Fall-In-Love-chosic.com_.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+// Add floating hearts
+const heartsContainer = document.getElementById('hearts-container');
+const heartShapes = ['❤','💖','💗','💘','💞'];
+const colors = ['#ff4d6d','#ff6b81','#6da8ff','#f0a0c0','#ff85a0'];
+
+for(let i=0;i<40;i++){
+  const h = document.createElement('span');
+  h.classList.add('heart');
+  h.innerHTML = heartShapes[Math.floor(Math.random()*heartShapes.length)];
+  h.style.fontSize = Math.random()*30+15+'px';
+  h.style.color = colors[Math.floor(Math.random()*colors.length)];
+  h.style.top = Math.random()*window.innerHeight + 'px';
+  h.style.left = Math.random()*window.innerWidth + 'px';
+  h.style.setProperty('--x', (Math.random()*100-50)+'px');
+  h.style.setProperty('--y', (Math.random()*-150-50)+'px');
+  h.style.animationDuration = (Math.random()*5+4)+'s';
+  heartsContainer.appendChild(h);
+}
+
+// Next button functionality
+let page = 1;
+const pages = document.querySelectorAll('.page');
+pages.forEach((p,index)=>{if(index!==0)p.style.display='none';});
+
+const music = document.getElementById('music');
+
+function next(){
+  if(page<pages.length){
+    pages[page-1].style.display='none';
+    pages[page].style.display='block';
+    page++;
+    window.scrollTo(0,0);
+  }
+  // Play music starting from page 2
+  if(page>=2 && music.paused){
+    music.volume = 0.5;
+    music.play().catch(()=>{}); // in case browser restricts autoplay
+  }
+}
+</script>
+
+</body>
+</html>
